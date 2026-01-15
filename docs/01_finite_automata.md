@@ -25,7 +25,7 @@ nowhere means that it is a **start state** $q_0$.
 
 formally, a finite state machine $M$ can be defined as a five tuple:
 
-$ M = (Q, \Sigma, \delta, q_0, F) $
+$$ M = (Q, \Sigma, \delta, q_0, F) $$
 
 where:
 

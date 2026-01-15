@@ -5,20 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="notes for cs1502">
     <title>cs1502 notes | drnfns</title>
-    <link rel=stylesheet href=https://unpkg.com/missing.css@1.2.0>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css" integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js" integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.2.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css"
+      integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew"
+      crossorigin="anonymous"
+    >
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js"
+      integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js"
+      integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main style="max-width: 72ch; margin: auto;">
+    <main style="max-width: 72ch; margin: auto">
       <noscript>
         <section class="warn box">
           <strong class="titlebar">warning</strong>
-          <p>looks like you have javascript disabled: math elements may not render properly.</p>
+          <p>
+            looks like you have javascript disabled: math elements may not
+            render properly.
+          </p>
         </section>
       </noscript>
       {{content}}
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            { left: "$", right: "$", display: false },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
