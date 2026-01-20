@@ -31,7 +31,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Preprocess markdown
-        run: ./preprocess.sh
+        run: cd cs1502 && ./preprocess.sh
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
