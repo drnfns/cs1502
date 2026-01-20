@@ -1,0 +1,18 @@
+digraph finite_state_machine {
+	rankdir=LR;
+  edge [margin = 0.1];
+  node [shape=point] start;
+	node [shape = doublecircle] 0110;
+	node [shape = circle];
+
+  start -> S;
+  S -> S [label = "1"];
+  S -> 0 [label = "0"];
+  0 -> 0 [label = "0"];
+  0 -> 01 [label = "1"];
+  01 -> 0 [label = "0"];
+  01 -> 011 [label = "1"];
+  011 -> S [label = "1", constraint = false];
+  011 -> 0110 [label = "0"];
+  0110 -> 0110 [label = "0, 1"];
+}

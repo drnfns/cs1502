@@ -107,3 +107,19 @@ always end in an accept state. the machine either just don't have an
 accept state, or the accept state is unreachable.
 
 ### example 2
+
+design a state machine $M$ such that its language is the set of all
+strings that contain `0110` as a substring.
+
+![graphs/01_design_ex2.gv](./static/01_design_ex2.svg)
+
+todo: explain, add common mistakes
+
+### example 3
+
+design a state machine $M$ such that its language is the set of all
+strings that start and end with the same symbol.
+
+![graphs/01_design_ex3.gv](./static/01_design_ex3.svg)
+
+todo: explain, add common mistakes
