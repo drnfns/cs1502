@@ -77,7 +77,7 @@ try designing some state machines that only recognizes one language.
 
 for all of these state machines, we assume that $\Sigma = \{0, 1\}$.
 
-#### example 1
+### example 1
 
 design a state machine $M$ where $L(M) = \emptyset$ ($M$ recognizes no
 languages).
@@ -101,3 +101,8 @@ it is impossible to reach this state, as there are no arrows (transition
 functions) that points to the accept state. when there exists a state
 that have no arrows pointing to it, we call that state an **unreachable
 state**.
+
+note that these  also work the same
+
+### example 2
+

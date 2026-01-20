@@ -1,7 +1,6 @@
 digraph finite_state_machine {
 	rankdir=LR;
   bgcolor = "transparent";
-  stylesheet = "https://unpkg.com/missing.css@1.2.0/dist/missing.min.css";
   edge [margin = 0.1];
 	node [shape = doublecircle] q_1;
   node [shape=point] start;
