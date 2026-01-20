@@ -102,7 +102,8 @@ functions) that points to the accept state. when there exists a state
 that have no arrows pointing to it, we call that state an **unreachable
 state**.
 
-note that these  also work the same
+note that these concepts also work the same for a state machine that
+always end in an accept state. the machine either just don't have an
+accept state, or the accept state is unreachable.
 
 ### example 2
-
