@@ -10,6 +10,12 @@ with each other. consider this following state diagram, representing the
 finite state machine $M_1$. $M_1$ takes a string input consisting of
 `0`s and `1`s.
 
+**info**: in the notes, i sometimes use the words dfa and state machine
+interchangeably, however, it is not technically correct. a deterministic
+finite automaton (dfa) is a specific type of finite state machine (fsm);
+and while all dfas are fsms, it is not the same other way around. keep
+it in your mind while reading :))
+
 ![graphs/01_state_machine.gv](./static/01_state_machine.svg)
 
 ### components
@@ -23,7 +29,8 @@ the arrows represent transition functions; which indaicates the change
 of state based on an input. the state where the arrow pointing from
 nowhere means that it is a **start state** $q_0$.
 
-formally, a finite state machine $M$ can be defined as a five tuple:
+formally, a deterministic finite automaton $M$ can be defined as a five
+tuple:
 
 $$ M = (Q, \Sigma, \delta, q_0, F) $$
 
@@ -44,9 +51,7 @@ where:
 
 consider this state machine: $M_1$.
 
-![graphs/01_components_ex1.gv](./static/01_components_ex1.svg)\
-<sub><i>sorry if this is difficult to read, i have no idea why graphviz
-is like this</i></sub>
+![graphs/01_components_ex1.gv](./static/01_components_ex1.svg)
 
 this state machine takes a string as the input, where
 $\Sigma := \{0, 1\}$. it rejects the input `01101`, $\epsilon$ (an empty
@@ -93,8 +98,7 @@ this looks like a more complicated example; however, since it have no
 accept states, it will always end in a reject state, no matter the
 input.
 
-![graphs/01_design_ex1.3](./static/01_design_ex1.3.svg)\
-<sub><i>sorry again for the messy output, graphviz is weird</i></sub>
+![graphs/01_design_ex1.3](./static/01_design_ex1.3.svg)
 
 this solution also works, even though there is an accept state. however,
 it is impossible to reach this state, as there are no arrows (transition
