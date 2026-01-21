@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="notes for cs1502">
-  <title>cs1502 notes | drnfns</title>
-  <link rel="stylesheet" href="https://unpkg.com/missing.css@1.2.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@300..1000,0..1&display=swap"
-    rel="stylesheet">
-  <style>
-    @media (prefers-color-scheme: dark) {
-      img {
-        filter: invert(1);
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="notes for cs1502">
+    <title>cs1502 notes | drnfns</title>
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.2.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@300..1000,0..1&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      @media (prefers-color-scheme: dark) {
+        img {
+          filter: invert(1);
+        }
       }
-    }
-    :root {
-      --main-font: "Recursive", sans-serif;
-      --display-font: "Recursive", system-ui, sans-serif;
-      --mono-font: monospace, monospace;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css"
-    integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js"
-    integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ"
-    crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js"
-    integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
-    crossorigin="anonymous"></script>
-</head>
+      :root {
+        --main-font: "Recursive", sans-serif;
+        --display-font: "Recursive", system-ui, sans-serif;
+        --mono-font: monospace, monospace;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css"
+      integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew"
+      crossorigin="anonymous"
+    >
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js"
+      integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js"
+      integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <main style="max-width: 72ch; margin: auto">
-    <noscript>
-      <section class="warn box">
-        <strong class="titlebar">warning</strong>
-        <p>
-          looks like you have javascript disabled: math elements may not
-          render properly.
-        </p>
-      </section>
-    </noscript>
-    {{content}}
-  </main>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false },
-          { left: "\\(", right: "\\)", display: false },
-          { left: "\\[", right: "\\]", display: true },
-        ],
+  <body>
+    <main style="max-width: 72ch; margin: auto">
+      <noscript>
+        <section class="warn box">
+          <strong class="titlebar">warning</strong>
+          <p>
+            looks like you have javascript disabled: math elements may not
+            render properly.
+          </p>
+        </section>
+      </noscript>
+      {{content}}
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false },
+            { left: "\\[", right: "\\]", display: true },
+          ],
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
