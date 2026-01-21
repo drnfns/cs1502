@@ -19,10 +19,10 @@ $(graphs_outdir)/%.svg: graphs/%.gv
 $(prose_outdir)/%.pdf: docs/%.md
 	pandoc --resource-path docs -i $< -o $@
 
-format:
+fmt:
 	deno fmt $(prose) --line-width=72 -q
 
 clean:
 	rm -rf $(graphs_outdir) $(prose_outdir)
 
-.PHONY: all clean
+.PHONY: all clean fmt

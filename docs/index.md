@@ -7,3 +7,5 @@ a pandoc issue that i haven't figured out how to fix yet; sorry!
 
 1. [deterministic finite automaton](./01_finite_automata.md)
   - pdf version: [here](./pdfs/01_finite_automata.pdf)
+2. [combining dfas, operators, and nfas](./02_combine_operator_nfa.md)
+  - pdf version: [here](./pdfs/02_combine_operator_nfa.pdf)
