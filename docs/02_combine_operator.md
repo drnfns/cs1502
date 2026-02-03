@@ -40,7 +40,8 @@ notices it is a cartesian product of the states for the dfas $A$ and
 $B$; where $Q_M = Q_A \times Q_B$.
 
 then we redraw the transition functions by executing both dfas at the
-same time. for each input, we draw the transition function pointing to the state of both machines at the same time.
+same time. for each input, we draw the transition function pointing to
+the state of both machines at the same time.
 
 ![graphs/02_combine_ex1p3.gv](./static/02_combine_ex1p3.svg)
 <sub>im so sorry... <a href="./static/combine.png">here</a> is a better
@@ -107,10 +108,12 @@ following:
   - same as in set theory
   - **theorem**: if $A$ and $B$ are regular languages, $A \cup B$ is a
     regular language.
-- **concatenation**: $A \cdot B = AB = \{xy \mid x \in A \land y \in B\}$
+- **concatenation**:
+  $A \cdot B = AB = \{xy \mid x \in A \land y \in B\}$
   - let $A = \{00, 11\}$ and $B = \{010, 101\}$
   - $A \cdot B = {00010, 00101, 11010, 11101}$
-- **kleene star**: $A^* = \{x_1x_2...x_k \mid k \geq 0 \land x_i \in A \}$
+- **kleene star**:
+  $A^* = \{x_1x_2...x_k \mid k \geq 0 \land x_i \in A \}$
   - $\{\epsilon\} \cup A \cup AA \cup AAA \cup AAAA \cup ...$
     ($\epsilon$ is the empty string)
   - example: let $A = \{00, 11\}$; $A^* = \{\epsilon, 00, 11, 0000,
