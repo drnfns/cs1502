@@ -1,4 +1,4 @@
-digraph finite_state_machine {
+digraph combine_ex1p2 {
 	rankdir=LR;
   edge [margin = 0.1];
   node [shape=point] start;

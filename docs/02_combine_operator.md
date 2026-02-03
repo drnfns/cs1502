@@ -55,7 +55,7 @@ to construct a dfa $A = (Q_A, \Sigma, \delta_A, q_A, F_A)$ where $L(A) =
 L(B) \cup L(C)$, we write that:
 
 $$
-  Q_A = Q_B \times Q_C = \{(q, r) | q \in Q_B and r in Q_C\}
+  Q_A = Q_B \times Q_C = \{(q, r) | q \in Q_B \and r \in Q_C\}
 $$
 
 where its transition functions are:
@@ -103,14 +103,14 @@ and tools are operations for manipulating _languages_.
 assume the languages $A$ and $B$; we define the regular operations are
 following:
 
-- **union**: $A \cup B = \{w | w \in A \lor w \in B \}$
+- **union**: $A \cup B = \{w \| w \in A \lor w \in B \}$
   - same as in set theory
   - **theorem**: if $A$ and $B$ are regular languages, $A \cup B$ is a
     regular language.
-- **concatenation**: $A \cdot B = AB = \{xy | x \in A \land y \in B\}$
+- **concatenation**: $A \cdot B = AB = \{xy \| x \in A \land y \in B\}$
   - let $A = \{00, 11\}$ and $B = \{010, 101\}$
   - $A \cdot B = {00010, 00101, 11010, 11101}$
-- **kleene star**: $A^* = \{x_1x_2...x_k | k \geq 0 \land x_i \in A \}$
+- **kleene star**: $A^* = \{x_1x_2...x_k \| k \geq 0 \land x_i \in A \}$
   - $\{\epsilon\} \cup A \cup AA \cup AAA \cup AAAA \cup ...$
     ($\epsilon$ is the empty string)
   - example: let $A = \{00, 11\}$; $A^* = \{\epsilon, 00, 11, 0000,

@@ -1,4 +1,4 @@
-digraph finite_state_machine {
+digraph tree {
 	rankdir=TD;
   edge [margin = 0.1];
 	// node [shape = doublecircle] q_3;
