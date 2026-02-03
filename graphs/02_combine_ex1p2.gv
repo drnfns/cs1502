@@ -1,12 +1,12 @@
 digraph finite_state_machine {
 	rankdir=LR;
   edge [margin = 0.1];
-	node [shape = doublecircle] r_1;
   node [shape=point] start;
 	node [shape = circle];
 
   start -> r_0;
   r_0 -> r_0 [label = "1"];
+	node [shape = doublecircle] r_1;
   r_0 -> r_1 [label = "0"];
   r_1 -> r_1 [label = "0"];
   r_1 -> r_0 [label = "1"];

@@ -99,7 +99,7 @@ we can make it a bit more complicated:
 since this dfa also have no accept states, it will always end in a
 reject state, no matter the input. however, let's look at this solution:
 
-![graphs/01_design_ex1p3](./static/01_design_ex1p3.svg)
+![graphs/01_design_ex1p3.gv](./static/01_design_ex1p3.svg)
 
 this solution also works, even though there is an accept state. however,
 it is impossible to reach this state, as there are no arrows (transition
@@ -120,13 +120,9 @@ set of all strings that contain `0110` as a substring.
 
 ![graphs/01_design_ex2.gv](./static/01_design_ex2.svg)
 
-todo: explain, add common mistakes
-
 ### example 3
 
 design a state machine $M$ such that its language is the set of all
 strings that start and end with the same symbol.
 
 ![graphs/01_design_ex3.gv](./static/01_design_ex3.svg)
-
-todo: explain, add common mistakes

@@ -23,6 +23,6 @@ fmt:
 	deno fmt $(prose) --line-width=72 -q
 
 clean:
-	rm -rf $(graphs_outdir) $(prose_outdir)
+	rm -rf $(graphs_outdir)/*.svg $(prose_outdir)/*.pdf
 
 .PHONY: all clean fmt
