@@ -1,8 +1,45 @@
 digraph tree {
-	rankdir=TD;
-  edge [margin = 0.1];
-	// node [shape = doublecircle] q_3;
-  node [shape=point] start;
-	node [shape = circle];
+  node [shape=circle];
+  graph [rankdir=TB];
 
+  n0 [label="q1"];
+
+  n1 [label="q1"];
+  n0 -> n1;
+
+  n2_1 [label="q1"];
+  n2_2 [label="q2"];
+  n2_3 [label="q3"];
+  n1 -> {n2_1, n2_2, n2_3};
+
+  n3_1 [label="q1"];
+  n3_2 [label="q3"];
+  n2_1 -> n3_1;
+  n2_2 -> n3_2;
+
+  n4_1 [label="q1"];
+  n4_2 [label="q2"];
+  n4_3 [label="q3"];
+  n4_4 [label="q4"];
+  n3_1 -> {n4_1, n4_2, n4_3};
+  n3_2 -> n4_4;
+
+  n5_1 [label="q1"];
+  n5_2 [label="q2"];
+  n5_3 [label="q3"];
+  n5_4 [label="q4"];
+  n5_5 [label="q4"];
+  n4_1 -> {n5_1, n5_2, n5_3};
+  n4_3 -> n5_4;
+  n4_4 -> n5_5;
+
+  n6_1 [label="q1"];
+  n6_2 [label="q3"];
+  n6_3 [label="q4", shape=doublecircle];
+  n6_4 [label="q4", shape=doublecircle];
+
+  n5_1 -> n6_1;
+  n5_2 -> n6_2;
+  n5_4 -> n6_3;
+  n5_5 -> n6_4;
 }

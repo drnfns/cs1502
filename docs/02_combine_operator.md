@@ -43,9 +43,7 @@ then we redraw the transition functions by executing both dfas at the
 same time. for each input, we draw the transition function pointing to
 the state of both machines at the same time.
 
-![graphs/02_combine_ex1p3.gv](./static/02_combine_ex1p3.svg)
-<sub>im so sorry... <a href="./static/combine.png">here</a> is a better
-image</sub>
+![static/combine.png](./static/combine.png)
 
 ### combining dfas, formally
 
