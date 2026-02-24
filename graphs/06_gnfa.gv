@@ -1,0 +1,7 @@
+digraph gnfa {
+	rankdir=LR;
+  edge [margin = 0.1];
+	node [shape = circle];
+
+  q2 -> q5 [label = "0*&cup;11*0"];
+}

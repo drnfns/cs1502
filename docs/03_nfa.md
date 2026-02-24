@@ -74,8 +74,8 @@ where:
 
 ## powerset construction
 
-**theorem**: every nondeterministic finite automaton (nfa) have an
-equivalent deterministic finite automaton (dfa).
+> **theorem**: every nondeterministic finite automaton (nfa) have an
+> equivalent deterministic finite automaton (dfa).
 
 the transformation of an nfa to an dfa is called **powerset
 construction**.
@@ -100,9 +100,11 @@ $$
 E(R) = \{q \mid q \text{ can be reached from } R \text{ by travel along } 0 \text{ or more } \epsilon \text{ arrows}\}
 $$
 
-or in english, $E(R)$ is the set of all states reachable from $R$ just by following $\epsilon$ arrows.
+or in english, $E(R)$ is the set of all states reachable from $R$ just
+by following $\epsilon$ arrows.
 
-the process would still be the same as above
+the process would still be the same as above, but
 
 - **start state**: the new start state becomes $q'_0 = E({q_0})$
-- **transitions**: we apply $E$ to the results of our transitions: $\delta'(R, a) = \bigcup_{r \in R} E(\delta(r, a))$.
+- **transitions**: we apply $E$ to the results of our transitions:
+  $\delta'(R, a) = \bigcup_{r \in R} E(\delta(r, a))$.

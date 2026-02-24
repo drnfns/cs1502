@@ -104,8 +104,6 @@ following:
 
 - **union**: $A \cup B = \{w \mid w \in A \lor w \in B \}$
   - same as in set theory
-  - **theorem**: if $A$ and $B$ are regular languages, $A \cup B$ is a
-    regular language.
 - **concatenation**:
   $A \cdot B = AB = \{xy \mid x \in A \land y \in B\}$
   - let $A = \{00, 11\}$ and $B = \{010, 101\}$
@@ -117,3 +115,6 @@ following:
   - example: let $A = \{00, 11\}$; $A^* = \{\epsilon, 00, 11, 0000,
   0011, 1100, 1111, 000000, ...\}$
   - when $A = \emptyset$, $A^* = \{\epsilon\}$.
+
+> **theorem**: if $A$ and $B$ are regular languages, $A \cup B$ is a
+> regular language.
